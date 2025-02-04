@@ -3,19 +3,28 @@
   <h1>Welcome to Your Vue.js Maersk</h1>
   <!--<HelloWorld msg="Welcome to Your Vue.js Maersk" />-->
   <HomeC />
-  <TutC />
+  <!--<TutC />-->
+  <!--<CheckC />-->
+  <!--<ForC />-->
+  <!--<ChildC name="sunny shilpa" />-->
 </template>
 
 <script>
 //import HelloWorld from "./components/HelloWorld.vue";
 import HomeC from './components/Home.vue';
-import TutC from './components/Tut.vue';
+//import TutC from './components/Tut.vue';
+//import CheckC from './components/Checkbox.vue';
+//import ForC from './components/For.vue';
+//import ChildC from './components/Child.vue';
 export default {
   name: "App",
   components: {
     //HelloWorld,
     HomeC,
-    TutC
+    //TutC,
+    //CheckC,
+    //ForC,
+    //ChildC
   },
 };
 </script>
