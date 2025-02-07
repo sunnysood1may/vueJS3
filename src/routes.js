@@ -8,10 +8,27 @@ import RefC from './components/Ref.vue';
 import SimpleForm from './components/SimpleForm.vue';
 import FormModifier from './components/FormModifier.vue';
 import NonProp from './components/NonProps/NonProp';
+import SlotS from './components/Slots/Slots';
 import ComputedProperty from './components/ComputedProperty.vue';
 import WatcherS from './components/Watchers.vue';
+import DynamicC from './components/Dynamic.vue';
 
 const routes = [
+    {
+        name: 'DynamicC',
+        path: '/DynamicComponent',
+        component: DynamicC
+    },
+    {
+        name: 'SlotS',
+        path: '/Slots',
+        component: SlotS
+    },
+    {
+        name: 'NonProp',
+        path: '/NonProp',
+        component: NonProp
+    },
     {
         name: 'WatcherS',
         path: '/Watchers',
@@ -21,11 +38,6 @@ const routes = [
         name: 'ComputedProperty',
         path: '/ComputedProperty',
         component: ComputedProperty
-    },
-    {
-        name: 'NonProp',
-        path: '/NonProp',
-        component: NonProp
     },
     {
         name: 'FormModifier',

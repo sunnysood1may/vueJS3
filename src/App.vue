@@ -20,6 +20,8 @@
   <router-link to="/NonProp">NonProp</router-link>&nbsp;
   <router-link to="/ComputedProperty">ComputedProperty</router-link>&nbsp;
   <router-link to="/Watchers">Watchers</router-link>&nbsp;
+  <router-link to="/Slots">Slots</router-link>&nbsp;
+  <router-link to="/DynamicComponent">DynamicComponent</router-link>&nbsp;
 
   <router-view></router-view>
 
