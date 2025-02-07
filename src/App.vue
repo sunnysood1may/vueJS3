@@ -14,6 +14,12 @@
   <router-link to="/profile/shilpa">Shilpa</router-link>&nbsp;
   <router-link to="/profile/shobhit">Shobhit</router-link>&nbsp;
   <router-link to="/binding">Binding</router-link>&nbsp;
+  <router-link to="/ref">Ref</router-link>&nbsp;
+  <router-link to="/SimpleForm">SimpleForm</router-link>&nbsp;
+  <router-link to="/FormModifier">FormModifiers</router-link>&nbsp;
+  <router-link to="/NonProp">NonProp</router-link>&nbsp;
+  <router-link to="/ComputedProperty">ComputedProperty</router-link>&nbsp;
+  <router-link to="/Watchers">Watchers</router-link>&nbsp;
 
   <router-view></router-view>
 

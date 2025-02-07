@@ -4,12 +4,48 @@ import Login from './components/Login.vue';
 import Profile from './components/Profile.vue';
 import PageNotFound from './components/PageNotFound.vue';
 import BindingC from './components/Binding.vue';
+import RefC from './components/Ref.vue';
+import SimpleForm from './components/SimpleForm.vue';
+import FormModifier from './components/FormModifier.vue';
+import NonProp from './components/NonProps/NonProp';
+import ComputedProperty from './components/ComputedProperty.vue';
+import WatcherS from './components/Watchers.vue';
 
 const routes = [
+    {
+        name: 'WatcherS',
+        path: '/Watchers',
+        component: WatcherS
+    },
+    {
+        name: 'ComputedProperty',
+        path: '/ComputedProperty',
+        component: ComputedProperty
+    },
+    {
+        name: 'NonProp',
+        path: '/NonProp',
+        component: NonProp
+    },
+    {
+        name: 'FormModifier',
+        path: '/FormModifier',
+        component: FormModifier
+    },
+    {
+        name: 'SimpleForm',
+        path: '/SimpleForm',
+        component: SimpleForm
+    },
     {
         name: 'Binding',
         path: '/binding',
         component: BindingC
+    },
+    {
+        name: 'Ref',
+        path: '/ref',
+        component: RefC
     },
     {
         name: 'Home',
