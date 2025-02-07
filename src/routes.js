@@ -8,8 +8,20 @@ import RefC from './components/Ref.vue';
 import SimpleForm from './components/SimpleForm.vue';
 import FormModifier from './components/FormModifier.vue';
 import NonProp from './components/NonProps/NonProp';
+import ComputedProperty from './components/ComputedProperty.vue';
+import WatcherS from './components/Watchers.vue';
 
 const routes = [
+    {
+        name: 'WatcherS',
+        path: '/Watchers',
+        component: WatcherS
+    },
+    {
+        name: 'ComputedProperty',
+        path: '/ComputedProperty',
+        component: ComputedProperty
+    },
     {
         name: 'NonProp',
         path: '/NonProp',

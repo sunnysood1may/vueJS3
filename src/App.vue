@@ -18,6 +18,8 @@
   <router-link to="/SimpleForm">SimpleForm</router-link>&nbsp;
   <router-link to="/FormModifier">FormModifiers</router-link>&nbsp;
   <router-link to="/NonProp">NonProp</router-link>&nbsp;
+  <router-link to="/ComputedProperty">ComputedProperty</router-link>&nbsp;
+  <router-link to="/Watchers">Watchers</router-link>&nbsp;
 
   <router-view></router-view>
 
