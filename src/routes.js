@@ -12,8 +12,14 @@ import SlotS from './components/Slots/Slots';
 import ComputedProperty from './components/ComputedProperty.vue';
 import WatcherS from './components/Watchers.vue';
 import DynamicC from './components/Dynamic.vue';
+import TelePort from './components/Teleport.vue';
 
 const routes = [
+    {
+        name: 'TelePort',
+        path: '/Teleport',
+        component: TelePort
+    },
     {
         name: 'DynamicC',
         path: '/DynamicComponent',

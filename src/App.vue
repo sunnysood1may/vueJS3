@@ -22,8 +22,13 @@
   <router-link to="/Watchers">Watchers</router-link>&nbsp;
   <router-link to="/Slots">Slots</router-link>&nbsp;
   <router-link to="/DynamicComponent">DynamicComponent</router-link>&nbsp;
+  <router-link to="/Teleport">TeleportComponent</router-link>&nbsp;
 
   <router-view></router-view>
+
+  <teleport to="#footer">
+    <FooTer />
+  </teleport>
 
 </template>
 
@@ -34,6 +39,7 @@
 //import CheckC from './components/Checkbox.vue';
 //import ForC from './components/For.vue';
 //import ChildC from './components/Child.vue';
+import FooTer from './components/Footer.vue';
 export default {
   name: "App",
   components: {
@@ -43,6 +49,7 @@ export default {
     //CheckC,
     //ForC,
     //ChildC
+    FooTer
   },
 };
 </script>
