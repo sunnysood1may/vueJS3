@@ -1,11 +1,16 @@
 <template>
-    <h2>Login Component</h2>
-    
+    <h2 ref="user">Login Component</h2> 
 </template>
 
 <script>
 export default {
-    name: 'LoginC'
+    name: 'LoginC',
+    beforeUnmount(){
+        console.log("beforeUnmount",this.$refs['user']);
+    },
+    unmounted(){
+        console.log("unmounted",this.$refs['user']);
+    }
 }
 </script>
 <style scoped>

@@ -23,6 +23,7 @@
   <router-link to="/Slots">Slots</router-link>&nbsp;
   <router-link to="/DynamicComponent">DynamicComponent</router-link>&nbsp;
   <router-link to="/Teleport">TeleportComponent</router-link>&nbsp;
+  <router-link to="/BeforeCreate">BeforeCreate</router-link>&nbsp;
 
   <router-view></router-view>
 
