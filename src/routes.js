@@ -13,8 +13,14 @@ import ComputedProperty from './components/ComputedProperty.vue';
 import WatcherS from './components/Watchers.vue';
 import DynamicC from './components/Dynamic.vue';
 import TelePort from './components/Teleport.vue';
+import BeforeCreate from './components/BeforeCreate';
 
 const routes = [
+    {
+        name: 'BeforeCreate',
+        path: '/BeforeCreate',
+        component: BeforeCreate
+    },
     {
         name: 'TelePort',
         path: '/Teleport',
