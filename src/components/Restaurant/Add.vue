@@ -29,7 +29,7 @@
           </td>
         </tr>
         <tr>
-          <td><button v-on:click="addRestaurent">Add Restaurent</button></td>
+          <td><button v-on:click="addRestaurent">Add</button></td>
         </tr>
       </tbody>
     </table>

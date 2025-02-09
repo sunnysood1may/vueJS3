@@ -1,17 +1,11 @@
 <template>
-  
   <div class="nav">
     <router-link to="/">Home</router-link>
-
     <router-link to="/add">Add Restaurent</router-link>
-    <router-link to="/update">Update Restaurent</router-link>
     <router-link to="/List">Restaurent Listing</router-link>
-
     <router-link to="/SignUp">SignUp</router-link>
     <router-link to="/login">Login</router-link>
-
     <a v-on:click="logout" href="#">Logout</a>
-
     <router-link to="/profile/sunny">Sunny</router-link>
     <router-link to="/profile/shilpa">Shilpa</router-link>
     <router-link to="/profile/shobhit">Shobhit</router-link>

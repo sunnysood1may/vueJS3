@@ -74,7 +74,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   bottom: 1px solid skyblue;
-  color: #fff;
   background-color: skyblue;
   cursor: pointer;
 }
