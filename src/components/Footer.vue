@@ -1,7 +1,6 @@
 <template>
 <div class="footer">
-    <h2>Footer</h2>
-    <p>Copy Right @ Vue JS3 Tutorial</p>
+    <h2>Copy Right @ Vue JS3 Tutorial</h2>
 </div>
 </template>
 
@@ -12,7 +11,14 @@ export default {
 </script>
 <style scoped>
 .footer {
-    background-color: orange;
+    background-color: #42b0d5;
     color: #fff;
+    padding: 10px;
+    height: 50px;
+    font-style: normal;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 </style>

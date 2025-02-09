@@ -38,10 +38,16 @@ export default {
       alert(e + " clicked");
     },
   },
+  mounted(){
+    let user = localStorage.getItem('user-info');
+    if(!user){
+      this.$router.push({name: "SignUp"});
+    }
+  }
 };
 </script>
 <style scoped>
 h1 {
-  color: orange;
+  color: #42b0d5;
 }
 </style>

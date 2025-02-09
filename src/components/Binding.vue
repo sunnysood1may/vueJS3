@@ -28,7 +28,7 @@ export default {
 </script>
 <style scoped>
 h2 {
-    color: orange;
+    color: #42b0d5;
 }
 .green{
     background-color: green;
