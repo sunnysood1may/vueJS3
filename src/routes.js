@@ -34,7 +34,7 @@ const routes = [
     },
     {
         name: 'Update',
-        path: '/Update',
+        path: '/Update/:id',
         component: UpdateR
     },
     {
