@@ -14,8 +14,44 @@ import WatcherS from './components/Watchers.vue';
 import DynamicC from './components/Dynamic.vue';
 import TelePort from './components/Teleport.vue';
 import BeforeCreate from './components/BeforeCreate';
+import GetApi from './components/GetApi';
+import PostApi from './components/PostApi';
+import SignUp from './components/Restaurant/SignUp';
+import AddR from './components/Restaurant/Add';
+import UpdateR from './components/Restaurant/Update';
+import ListR from './components/Restaurant/List';
 
 const routes = [
+    {
+        name: 'List',
+        path: '/List',
+        component: ListR
+    },
+    {
+        name: 'Add',
+        path: '/Add',
+        component: AddR
+    },
+    {
+        name: 'Update',
+        path: '/Update',
+        component: UpdateR
+    },
+    {
+        name: 'SignUp',
+        path: '/SignUp',
+        component: SignUp
+    },
+    {
+        name: 'GetApi',
+        path: '/GetApi',
+        component: GetApi
+    },
+    {
+        name: 'PostApi',
+        path: '/PostApi',
+        component: PostApi
+    },
     {
         name: 'BeforeCreate',
         path: '/BeforeCreate',

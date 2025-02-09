@@ -49,6 +49,6 @@ export default {
 </script>
 <style scoped>
 h1 {
-  color: orange;
+  color: #42b0d5;
 }
 </style>

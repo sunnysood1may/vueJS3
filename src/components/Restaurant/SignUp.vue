@@ -3,9 +3,7 @@
     <table align="center">
       <tbody>
         <tr>
-          <td>
-            <h2 ref="user">Login Component</h2>
-          </td>
+          <td><h3>Sign Up</h3></td>
         </tr>
         <tr>
           <td>
@@ -14,6 +12,9 @@
               width="100"
             />
           </td>
+        </tr>
+        <tr>
+          <td><input type="text" v-model="name" placeholder="Enter Name" /></td>
         </tr>
         <tr>
           <td>
@@ -30,10 +31,10 @@
           </td>
         </tr>
         <tr>
-          <td><button v-on:click="login">Login</button></td>
+          <td><button v-on:click="signUp">Sign Up</button></td>
         </tr>
         <tr>
-          <td><router-link to="/SignUp">Sign Up</router-link></td>
+          <td><router-link to="/login">Login</router-link></td>
         </tr>
       </tbody>
     </table>
@@ -43,40 +44,35 @@
 <script>
 import axios from "axios";
 export default {
-  name: "LoginC",
+  name: "SignUp",
   data() {
     return {
+      name: "",
       email: "",
       password: "",
     };
   },
   methods: {
-    async login(){
-        console.log(this.email);
-        let result = await axios.post("https://reqres.in/api/login", {
+    async signUp() {
+      console.log("signUp", this.name, this.email, this.password);
+      let result = await axios.post("https://reqres.in/api/register", {
         email: this.email,
+        name: this.name,
         password: this.password,
       });
-      //console.log(result.status); console.log(result.data); console.log(result.data.length);
-      if (result.status == 200 && result.data) {
+      console.log(result);
+      if (result.status == 201) {
         alert("Sign Up Done");
-        //localStorage.setItem("user-info", JSON.stringify(result.data));
-        localStorage.setItem("user-info", JSON.stringify(this.email));
-        this.$router.push({ name: "Home" });
       }
-    }
+      localStorage.setItem("user-info", JSON.stringify(result.data));
+      this.$router.push({ name: "Home" });
+    },
   },
   mounted() {
     let user = localStorage.getItem("user-info");
     if (user) {
       this.$router.push({ name: "Home" });
     }
-  },
-  beforeUnmount() {
-    console.log("beforeUnmount", this.$refs["user"]);
-  },
-  unmounted() {
-    console.log("unmounted", this.$refs["user"]);
   },
 };
 </script>
